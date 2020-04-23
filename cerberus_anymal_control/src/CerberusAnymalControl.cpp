@@ -8,7 +8,7 @@
 CerberusAnymalControl::CerberusAnymalControl()
 {
 
-  nh_.getParam("CerberusAnymalControl/robot_name", robot_name_);
+  ros::param::get("~robot_name", robot_name_);
 
   model_ns_ = "/" + robot_name_;
   

@@ -4,8 +4,8 @@
   <!-- Args -->
   <arg name="robot_name"       default="anymal"/>
 
-  <!-- Learning controller node -->  
-  <node name="CerberusAnymalControl" pkg="cerberus_anymal_control" type="CerberusAnymalControl" output="screen">
+  <!-- Learning controller node -->
+  <node name="CerberusAnymalControl_$(arg robot_name)" pkg="cerberus_anymal_control" type="CerberusAnymalControl" output="screen">
     <param name="robot_name"   value="$(arg robot_name)"/>
   </node>
 </launch>
